@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         sayHello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //EditText textName = findViewById(R.id.editTextName);
-                //String name = textName.getText().toString();
-                //int a = 25, b=25, c;
-                //c = a+b;
-                //Toast.makeText(MainActivity.this, "Entered Name is :  " + name, Toast.LENGTH_SHORT).show();
+                EditText textName = findViewById(R.id.editTextName);
+                String name = textName.getText().toString();
+                int a = 25, b=25, c;
+                c = a+b;
+                Toast.makeText(MainActivity.this, "Entered Name is :  " + name, Toast.LENGTH_SHORT).show();
 
 
 
