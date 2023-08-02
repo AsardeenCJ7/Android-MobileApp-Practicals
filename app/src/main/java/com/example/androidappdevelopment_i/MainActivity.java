@@ -21,7 +21,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btnSubmit:
-                Toast.makeText(this, "This is Submit button", Toast.LENGTH_SHORT).show();
+                /*This is data getting
+                String name = fname.getText().toString();
+                String emailId = email.getText().toString();
+                String contact = cnum.getText().toString();
+                Toast.makeText(this, "Name is : " +name + "\n" +"Email id : " + emailId, Toast.LENGTH_SHORT).show();
+               */
                 Intent intent = new Intent(this,Home.class);
                 startActivity(intent);
                 break;
@@ -52,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fname =findViewById(R.id.editTextName);
         email =findViewById(R.id.editEmail);
+
         cnum=findViewById(R.id.editCnum);
         pwd=findViewById(R.id.editPwd);
 
