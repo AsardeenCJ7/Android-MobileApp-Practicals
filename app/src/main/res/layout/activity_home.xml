@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:hint="Enter Number 1"
-        android:textStyle="italic|bold" />
+        android:textStyle="italic|bold"
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/editNum2"
@@ -24,6 +25,7 @@
         android:hint="Enter Number 2"
         android:textStyle="italic|bold"
         android:layout_marginTop="20dp"
+        android:inputType="number"
         android:layout_below="@+id/editNum1"/>
 
 
