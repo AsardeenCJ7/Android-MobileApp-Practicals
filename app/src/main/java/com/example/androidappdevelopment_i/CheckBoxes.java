@@ -2,7 +2,10 @@ package com.example.androidappdevelopment_i;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
@@ -12,6 +15,7 @@ public class CheckBoxes extends AppCompatActivity {
 
     private CheckBox check1,check2,check3;
     private RadioGroup rgMaritalStatus;
+    private Button btnList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +25,7 @@ public class CheckBoxes extends AppCompatActivity {
      check1 = findViewById(R.id.checkbox1);
      check2=findViewById(R.id.checkbox2);
      check3 =findViewById(R.id.checkbox3);
-
+btnList = findViewById(R.id.btnListView);
      rgMaritalStatus = findViewById(R.id.rgMaritalStatus);
 
      rgMaritalStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -79,6 +83,15 @@ public class CheckBoxes extends AppCompatActivity {
                 else{
                     Toast.makeText(CheckBoxes.this, "NGU is checked out", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent listView = new Intent(CheckBoxes.this, ListViews.class);
+                startActivity(listView);
             }
         });
 
