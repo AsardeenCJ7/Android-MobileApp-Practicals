@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String contact = cnum.getText().toString();
                 Toast.makeText(this, "Name is : " +name + "\n" +"Email id : " + emailId, Toast.LENGTH_SHORT).show();
                */
-                Intent intent = new Intent(this,Home.class);
-                startActivity(intent);
+                Intent cal = new Intent(this,Home.class);
+                startActivity(cal);
                 break;
             case R.id.textView1:
                 Toast.makeText(this, "This is Forgot Password Link", Toast.LENGTH_SHORT).show();
+                Intent check = new Intent(this,CheckBoxes.class);
+                startActivity(check);
                 break;
             case R.id.textView2:
                 Toast.makeText(this, "This is SignIn Link", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxes">
+
+  <RelativeLayout
+      android:id="@+id/checkboxRel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="25dp">
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harry Potter"
+        android:checked="true"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkbox1"
+        android:text="Joker"
+        android:layout_marginLeft="15dp"
+        android:checked="true"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkbox2"
+        android:text="Never Give Up"
+        android:layout_marginLeft="15dp"/>
+
+  </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rgMaritalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkboxRel"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+        <RadioButton
+            android:id="@+id/rdoMarried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Married"
+           />
+
+        <RadioButton
+            android:id="@+id/rdoSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rdoRelation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In a Relationship"
+            android:layout_marginLeft="15dp"
+            />
+
+
+
+    </RadioGroup>
+</RelativeLayout>
